@@ -7,20 +7,27 @@
     <extensionElements>
         <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
     </extensionElements>
-    <inputData id="input" name="Input type">
+    <inputData id="input" name="customer">
         <extensionElements>
             <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="java.lang.String" collection="false" name="Input type"/>
+                <output bomType="Customer" collection="false" name="customer"/>
             </initialization>
         </extensionElements>
-        <variable id="input_ii" name="Input type" typeRef="java.lang.String"/>
+        <variable id="input_ii" name="customer" typeRef="Customer"/>
     </inputData>
     <decision id="input-mapping" name="Input mapping">
         <description>ML model input</description>
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="java.lang.String" collection="false" name="Input type"/>
+                <input bomType="Customer" collection="false" name="customer"/>
                 <output bomType="decisions.susan.upsell.retirement.Input" collection="false" name="Input mapping"/>
+                <rule defaultRule="false" href="input-mapping/Default%20Values.drl" kind="BusinessRule" name="Default Values"/>
+                <rule defaultRule="false" href="input-mapping/Main%20Features.drl" kind="BusinessRule" name="Main Features"/>
+                <rule defaultRule="false" href="input-mapping/Age%2023%20-%2030.drl" kind="BusinessRule" name="Age 23 - 30"/>
+                <rule defaultRule="false" href="input-mapping/Age%2031-40.drl" kind="BusinessRule" name="Age 31-40"/>
+                <rule defaultRule="false" href="input-mapping/Age%2041-55.drl" kind="BusinessRule" name="Age 41-55"/>
+                <rule defaultRule="false" href="input-mapping/Age%2056-65.drl" kind="BusinessRule" name="Age 56-65"/>
+                <rule defaultRule="false" href="input-mapping/Age%2065+.drl" kind="BusinessRule" name="Age 65+"/>
             </ruleset>
         </extensionElements>
         <variable id="input_mapping_ii" name="Input mapping" typeRef="decisions.susan.upsell.retirement.Input"/>
@@ -49,10 +56,10 @@
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="decisions.susan.upsell.retirement.Output" collection="false" name="ML model invocation"/>
-                <output bomType="java.lang.String" collection="false" name="Output mapping"/>
+                <output bomType="MLPredictiveResult" collection="false" name="Output mapping"/>
             </ruleset>
         </extensionElements>
-        <variable id="output_mapping_ii" name="Output mapping" typeRef="java.lang.String"/>
+        <variable id="output_mapping_ii" name="Output mapping" typeRef="MLPredictiveResult"/>
         <informationRequirement>
             <requiredInput href="#output"/>
         </informationRequirement>

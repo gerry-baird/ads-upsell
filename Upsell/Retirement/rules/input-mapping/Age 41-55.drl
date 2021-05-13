@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Age 41-55</name>
+  <uuid>c26575ed-3d2e-4d65-9df9-fbc7a1d6669f</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if  the age of customer is between 41 and 55 
+then set the customer age range40 to55 of decision to 1 ; ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>
