@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
-  <name>Age 23 - 30</name>
-  <uuid>4315ee2f-e1f2-4db6-a708-59c5b1d9a730</uuid>
+  <name>Education - Prof</name>
+  <uuid>e5709387-01c5-40a3-a1ce-a2c864f2d034</uuid>
   <locale>en_US</locale>
-  <definition><![CDATA[if  the age of customer is between 23 and 30 
-then set the customer age range23 to30 of decision to 1;]]></definition>
+  <definition><![CDATA[if the education level of customer is "Professional" 
+then set the customer education level professional of decision to 1;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

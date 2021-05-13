@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
-  <name>Age 23 - 30</name>
-  <uuid>4315ee2f-e1f2-4db6-a708-59c5b1d9a730</uuid>
+  <name>Market - Accumulating</name>
+  <uuid>2529f807-bc3d-4444-98e3-791c64c9178c</uuid>
   <locale>en_US</locale>
-  <definition><![CDATA[if  the age of customer is between 23 and 30 
-then set the customer age range23 to30 of decision to 1;]]></definition>
+  <definition><![CDATA[if the market group of customer is "Accumulating"
+then set the customer market group accumulating of decision to 1; ]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

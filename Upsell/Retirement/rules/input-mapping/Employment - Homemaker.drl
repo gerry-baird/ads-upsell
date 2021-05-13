@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
-  <name>Age 23 - 30</name>
-  <uuid>4315ee2f-e1f2-4db6-a708-59c5b1d9a730</uuid>
+  <name>Employment - Homemaker</name>
+  <uuid>fd5f4d43-f359-442c-88bd-e0cfc1a59a85</uuid>
   <locale>en_US</locale>
-  <definition><![CDATA[if  the age of customer is between 23 and 30 
-then set the customer age range23 to30 of decision to 1;]]></definition>
+  <definition><![CDATA[if the employment status of customer is "Homemaker" 
+then set the customer employment status homemaker of decision to 1;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>
