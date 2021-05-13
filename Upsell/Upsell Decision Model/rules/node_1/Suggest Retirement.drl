@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Suggest Retirement</name>
+  <uuid>ee3df7b1-0a64-428c-a342-e5076f8a871a</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	the probability of 'retirement model prediction' is at least 0.7 
+then
+	add "Retirement" to decision ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

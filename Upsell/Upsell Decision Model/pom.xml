@@ -42,5 +42,11 @@
             <type>decision-library</type>
             <version>LATEST-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>decisions.susan.upsell</groupId>
+            <artifactId>retirement</artifactId>
+            <type>decision-library</type>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>
