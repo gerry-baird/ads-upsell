@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Education - Highschool</name>
+  <uuid>a5410c1c-4df6-4a92-baba-cc0763e435c0</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if the education level of customer is "Highschool" 
+then set the customer education level high school of decision to 1;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

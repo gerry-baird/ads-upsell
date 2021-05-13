@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Market - Starting</name>
+  <uuid>33c2c995-a5ba-4251-a4c2-1d23202c53d1</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if the market group of customer is "Starting"
+then set the customer market group starting of decision to 1; ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Education - Professional</name>
+  <uuid>764662ea-3c7b-4427-b817-4b957ce504ec</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if the education level of customer is "Professional" 
+then set the customer education level professional of decision to 1;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Market - Spending</name>
+  <uuid>63096df8-2550-497f-8696-01f2032663d7</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if the market group of customer is "Spending"
+then set the customer market group spending of decision to 1; ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

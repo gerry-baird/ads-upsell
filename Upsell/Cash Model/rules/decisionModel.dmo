@@ -33,6 +33,24 @@
                 <rule defaultRule="false" href="input-mapping/Employment%20-%20Homemaker.drl" kind="BusinessRule" name="Employment - Homemaker"/>
                 <rule defaultRule="false" href="input-mapping/Employment%20-%20Retired.drl" kind="BusinessRule" name="Employment - Retired"/>
                 <rule defaultRule="false" href="input-mapping/Employment%20-%20Selfemployed.drl" kind="BusinessRule" name="Employment - Selfemployed"/>
+                <rule defaultRule="false" href="input-mapping/Employment%20-%20Unemployed.drl" kind="BusinessRule" name="Employment - Unemployed"/>
+                <rule defaultRule="false" href="input-mapping/Education%20-%20College.drl" kind="BusinessRule" name="Education - College"/>
+                <rule defaultRule="false" href="input-mapping/Education%20-%20Highschool.drl" kind="BusinessRule" name="Education - Highschool"/>
+                <rule defaultRule="false" href="input-mapping/Education%20-%20Phd.drl" kind="BusinessRule" name="Education - Phd"/>
+                <rule defaultRule="false" href="input-mapping/Education%20-%20Professional.drl" kind="BusinessRule" name="Education - Professional"/>
+                <rule defaultRule="false" href="input-mapping/Education%20-%20University.drl" kind="BusinessRule" name="Education - University"/>
+                <rule defaultRule="false" href="input-mapping/Market%20-%20Accumulating.drl" kind="BusinessRule" name="Market - Accumulating"/>
+                <rule defaultRule="false" href="input-mapping/Market%20-%20Gifting.drl" kind="BusinessRule" name="Market - Gifting"/>
+                <rule defaultRule="false" href="input-mapping/Market%20-%20Spending.drl" kind="BusinessRule" name="Market - Spending"/>
+                <rule defaultRule="false" href="input-mapping/Market%20-%20Starting.drl" kind="BusinessRule" name="Market - Starting"/>
+                <rule defaultRule="false" href="input-mapping/Urban%20Code%20-%20City.drl" kind="BusinessRule" name="Urban Code - City"/>
+                <rule defaultRule="false" href="input-mapping/Urban%20Code%20-%20Rural.drl" kind="BusinessRule" name="Urban Code - Rural"/>
+                <rule defaultRule="false" href="input-mapping/Urban%20Code%20-%20Urban.drl" kind="BusinessRule" name="Urban Code - Urban"/>
+                <rule defaultRule="false" href="input-mapping/Marital%20Status%20-%20Married%20.drl" kind="BusinessRule" name="Marital Status - Married "/>
+                <rule defaultRule="false" href="input-mapping/Marital%20Status%20-%20Divorced.drl" kind="BusinessRule" name="Marital Status - Divorced"/>
+                <rule defaultRule="false" href="input-mapping/Marital%20Status%20-%20Single.drl" kind="BusinessRule" name="Marital Status - Single"/>
+                <rule defaultRule="false" href="input-mapping/Gender%20-%20Female.drl" kind="BusinessRule" name="Gender - Female"/>
+                <rule defaultRule="false" href="input-mapping/Gender%20-%20Male.drl" kind="BusinessRule" name="Gender - Male"/>
             </ruleset>
         </extensionElements>
         <variable id="input_mapping_ii" name="Input mapping" typeRef="decisions.susan.upsell.cashModel.Input"/>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Market - Gifting</name>
+  <uuid>e4eb647b-8e91-4cbc-ad82-2aa266c7642f</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if the market group of customer is "Gifting"
+then set the customer market group gifting of decision to 1; ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

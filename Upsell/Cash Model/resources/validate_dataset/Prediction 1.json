@@ -2,11 +2,18 @@
   "customer": {
     "age": 67,
     "family size": 0,
-    "education level": "",
+    "education level": "Highschool",
     "income": 170000,
     "number of accounts": 1,
     "internet banking flag": false,
     "number of dependant children": 0,
-    "tenure in months": 0
+    "tenure in months": 0,
+    "employment status": "Retired",
+    "gender": "Male",
+    "marital status": "Married",
+    "market group": "Accumulating",
+    "name": "Bill",
+    "total amount of deposits": 5000,
+    "uban code": "Rural"
   }
 }
