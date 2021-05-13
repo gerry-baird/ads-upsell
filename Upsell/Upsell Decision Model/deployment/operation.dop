@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Upsell Decision Model">
+  <name>upsellDecisionModel</name>
+  <uuid>ce3007f1-c7f7-4610-bb69-a170fcd433d9</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#78a06b2f-af0b-4b2a-8877-dcfdd1bd5b48"/>
+  <targetRuleProject href="../../Upsell%20Decision%20Model#d36275e3-0413-4fd1-accc-8e51d17cf972"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

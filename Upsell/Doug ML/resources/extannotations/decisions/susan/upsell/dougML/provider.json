@@ -1,9 +1,0 @@
-{
-  "name" : "decisions/Susan/Doug ML1620827565306",
-  "type" : "WML",
-  "description" : "",
-  "mlUrl" : "https://eu-gb.ml.cloud.ibm.com",
-  "authUrl" : "https://iam.bluemix.net/identity/token",
-  "instanceId" : "8223243c-e793-498f-a8de-d3f6e037205d",
-  "apiKey" : null
-}

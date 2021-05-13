@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="decisions.susan.simple_test:dougML" ruleAppVersion="LATEST-SNAPSHOT" packageName="decisions.susan.simple_test.dougML" managingXom="true">
-  <name>dougML</name>
-  <uuid>2e52dc60-0725-4323-991f-bc82f2597f29</uuid>
+<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="decisions.susan.upsell:upsellDecisionModel" ruleAppVersion="LATEST-SNAPSHOT" packageName="decisions.susan.upsell.upselldecisionmodel" managingXom="true">
+  <name>upsellDecisionModel</name>
+  <uuid>bf1cfa1f-8c7d-49f6-a157-2c2b470607e4</uuid>
   <locales>en_US</locales>
   <operations operationName="operation">
-    <operation href="operation.dop#9d24be9f-d31c-4d1a-b7b9-4c5bbbd4412a"/>
+    <operation href="operation.dop#ce3007f1-c7f7-4610-bb69-a170fcd433d9"/>
     <properties key="ruleset.version">
       <value><![CDATA[1.0]]></value>
     </properties>
