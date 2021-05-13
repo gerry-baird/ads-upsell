@@ -18,12 +18,12 @@
         </dependency>
         <dependency>
             <groupId>decisions.susan.simple_test</groupId>
-            <artifactId>customerValidation</artifactId>
+            <artifactId>cashModel</artifactId>
             <version>LATEST-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>decisions.susan.simple_test</groupId>
-            <artifactId>dougML</artifactId>
+            <groupId>decisions.susan.upsell</groupId>
+            <artifactId>upsellDecisionModel</artifactId>
             <version>LATEST-SNAPSHOT</version>
         </dependency>
         <dependency>
@@ -64,7 +64,7 @@
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>decisions.susan.simple_test</groupId>
-                                    <artifactId>customerValidation</artifactId>
+                                    <artifactId>cashModel</artifactId>
                                     <version>LATEST-SNAPSHOT</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
@@ -72,8 +72,8 @@
                                     <outputDirectory>${project.build.directory}/classes</outputDirectory>
                                 </artifactItem>
                                 <artifactItem>
-                                    <groupId>decisions.susan.simple_test</groupId>
-                                    <artifactId>dougML</artifactId>
+                                    <groupId>decisions.susan.upsell</groupId>
+                                    <artifactId>upsellDecisionModel</artifactId>
                                     <version>LATEST-SNAPSHOT</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>

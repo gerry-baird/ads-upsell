@@ -16,8 +16,8 @@
     </properties>
     <modules>
         <module>ACME Data Model</module>
-        <module>Customer Validation</module>
-        <module>Doug ML</module>
+        <module>Cash Model</module>
+        <module>Upsell Decision Model</module>
         <module>.decisionservice</module>
     </modules>
 
