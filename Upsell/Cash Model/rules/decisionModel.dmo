@@ -30,6 +30,9 @@
                 <rule defaultRule="false" href="input-mapping/Age%2065%20and%20Over.drl" kind="BusinessRule" name="Age 65 and Over"/>
                 <rule defaultRule="false" href="input-mapping/Internet%20Banking.drl" kind="BusinessRule" name="Internet Banking"/>
                 <rule defaultRule="false" href="input-mapping/Employment%20-%20Employed.drl" kind="BusinessRule" name="Employment - Employed"/>
+                <rule defaultRule="false" href="input-mapping/Employment%20-%20Homemaker.drl" kind="BusinessRule" name="Employment - Homemaker"/>
+                <rule defaultRule="false" href="input-mapping/Employment%20-%20Retired.drl" kind="BusinessRule" name="Employment - Retired"/>
+                <rule defaultRule="false" href="input-mapping/Employment%20-%20Selfemployed.drl" kind="BusinessRule" name="Employment - Selfemployed"/>
             </ruleset>
         </extensionElements>
         <variable id="input_mapping_ii" name="Input mapping" typeRef="decisions.susan.upsell.cashModel.Input"/>
@@ -58,10 +61,11 @@
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="decisions.susan.upsell.cashModel.Output" collection="false" name="ML model invocation"/>
-                <output bomType="java.lang.Long" collection="false" name="Output mapping"/>
+                <output bomType="MLPredictiveResult" collection="false" name="Output mapping"/>
+                <rule defaultRule="false" href="output-mapping/Map%20output.drl" kind="BusinessRule" name="Map output"/>
             </ruleset>
         </extensionElements>
-        <variable id="output_mapping_ii" name="Output mapping" typeRef="java.lang.Long"/>
+        <variable id="output_mapping_ii" name="Output mapping" typeRef="MLPredictiveResult"/>
         <informationRequirement>
             <requiredInput href="#output"/>
         </informationRequirement>

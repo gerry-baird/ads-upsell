@@ -1,0 +1,25 @@
+
+# decisions.susan.upsell.retirement.Error
+decisions.susan.upsell.retirement.Error#concept.label = Output error
+decisions.susan.upsell.retirement.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = a new {Output error} where {0, code} {1, message} 
+decisions.susan.upsell.retirement.Error.code#phrase.action = set the code of {this} to {code}
+decisions.susan.upsell.retirement.Error.code#phrase.navigation = {code} of {this}
+decisions.susan.upsell.retirement.Error.message#phrase.action = set the message of {this} to {message}
+decisions.susan.upsell.retirement.Error.message#phrase.navigation = {message} of {this}
+
+# decisions.susan.upsell.retirement.Input
+decisions.susan.upsell.retirement.Input#concept.label = ML model input
+decisions.susan.upsell.retirement.Input.Input(java.lang.String)#phrase.navigation = a new {ML model input} where {0, input} 
+decisions.susan.upsell.retirement.Input.input#phrase.action = set the input of {this} to {input}
+decisions.susan.upsell.retirement.Input.input#phrase.navigation = {input} of {this}
+
+# decisions.susan.upsell.retirement.Output
+decisions.susan.upsell.retirement.Output#concept.label = ML model output
+decisions.susan.upsell.retirement.Output.Output(java.lang.String)#phrase.navigation = a new {ML model output} where {0, output} 
+decisions.susan.upsell.retirement.Output.error#phrase.action = set the error of {this} to {error}
+decisions.susan.upsell.retirement.Output.error#phrase.clearer = clear the error of {this}
+decisions.susan.upsell.retirement.Output.error#phrase.navigation = {error} of {this}
+decisions.susan.upsell.retirement.Output.inError()#phrase.navigation = {this} is in error
+decisions.susan.upsell.retirement.Output.output#phrase.action = set the output of {this} to {output}
+decisions.susan.upsell.retirement.Output.output#phrase.navigation = {output} of {this}
+decisions.susan.upsell.retirement.Output.run(decisions.susan.upsell.retirement.Input)#phrase.navigation = predict({0})

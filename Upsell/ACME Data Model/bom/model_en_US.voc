@@ -51,3 +51,15 @@ Customer.totalAmountOfDeposits#phrase.navigation = {total amount of deposits} of
 Customer.totalAmountOfDeposits#phrase.subtraction_setter = subtract {total amount of deposits} from the total amount of deposits of {this}
 Customer.ubanCode#phrase.action = set the uban code of {this} to {uban code}
 Customer.ubanCode#phrase.navigation = {uban code} of {this}
+
+# MLPredictiveResult
+MLPredictiveResult#concept.label = ML Predictive Result
+MLPredictiveResult.MLPredictiveResult(java.lang.Long,double)#phrase.navigation = a new {ML Predictive Result} where {0, prediction} {1, probability}
+MLPredictiveResult.prediction#phrase.action = set the prediction of {this} to {prediction}
+MLPredictiveResult.prediction#phrase.addition_setter = add {prediction} to the prediction of {this}
+MLPredictiveResult.prediction#phrase.navigation = {prediction} of {this}
+MLPredictiveResult.prediction#phrase.subtraction_setter = subtract {prediction} from the prediction of {this}
+MLPredictiveResult.probability#phrase.action = set the probability of {this} to {probability}
+MLPredictiveResult.probability#phrase.addition_setter = add {probability} to the probability of {this}
+MLPredictiveResult.probability#phrase.navigation = {probability} of {this}
+MLPredictiveResult.probability#phrase.subtraction_setter = subtract {probability} from the probability of {this}

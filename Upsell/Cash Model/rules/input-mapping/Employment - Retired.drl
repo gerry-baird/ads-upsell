@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Employment - Retired</name>
+  <uuid>b8117ff1-5f0d-40a0-aac5-7e195970383f</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if the employment status of customer is "Retired" 
+then set the customer employment status retired of decision to 1;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

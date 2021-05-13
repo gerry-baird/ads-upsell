@@ -17,6 +17,7 @@
     <modules>
         <module>ACME Data Model</module>
         <module>Cash Model</module>
+        <module>Retirement</module>
         <module>Upsell Decision Model</module>
         <module>.decisionservice</module>
     </modules>
