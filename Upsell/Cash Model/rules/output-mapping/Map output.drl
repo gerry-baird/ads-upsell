@@ -5,5 +5,6 @@
   <locale>en_US</locale>
   <definition><![CDATA[set decision to a new ML Predictive Result where 
 	the prediction is the prediction of 'ML model invocation' , 
-	the probability is the maximum probability of 'ML model invocation' ; ]]></definition>
+	the probability is the maximum probability of 'ML model invocation' , 
+    the product is "Cash";]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

@@ -1,0 +1,28 @@
+{
+  "metadata" : {
+    "id" : "4117ead7-1291-4512-8e0b-d5a11d6ccc7a",
+    "name" : "offer_affinity_RETIREMENTPLAN_model_deployment",
+    "modified_at" : "2021-05-10T12:32:36.752Z",
+    "created_at" : "2021-05-10T12:32:36.752Z",
+    "owner" : "IBMid-27000440YA",
+    "space_id" : "8223243c-e793-498f-a8de-d3f6e037205d"
+  },
+  "entity" : {
+    "name" : "offer_affinity_RETIREMENTPLAN_model_deployment",
+    "space_id" : "8223243c-e793-498f-a8de-d3f6e037205d",
+    "custom" : { },
+    "online" : { },
+    "status" : {
+      "state" : "ready",
+      "online_url" : {
+        "url" : "https://eu-gb.ml.cloud.ibm.com/ml/v4/deployments/4117ead7-1291-4512-8e0b-d5a11d6ccc7a/predictions"
+      }
+    },
+    "asset" : {
+      "id" : "d66e34b8-5e55-41ac-900b-da461fade927"
+    }
+  },
+  "name" : "offer_affinity_RETIREMENTPLAN_model_deployment",
+  "status" : "ready",
+  "deployedAt" : "2021-05-10T12:32:36.752Z"
+}

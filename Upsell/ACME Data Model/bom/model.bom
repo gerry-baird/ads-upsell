@@ -101,7 +101,11 @@ public class MLPredictiveResult
                 property "ads.attributeId" "2"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "probability"
                 property update "true";
-    public MLPredictiveResult(java.lang.Long prediction, double probability)
+    public string product
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "product"
+                property update "true";
+    public MLPredictiveResult(string product, java.lang.Long prediction, double probability)
                 property autoExpand "true"
                 property beanConstructor "true"
                 property groups "BALA"

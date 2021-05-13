@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
   <name>output-default-setting</name>
-  <uuid>4145a67f-87de-4a2e-88bc-7f60643d68a7</uuid>
+  <uuid>00370ca5-3036-4940-bb61-755f92bcbe5f</uuid>
   <locale>en_US</locale>
-  <definition><![CDATA[set decision to "Get a loan" ;]]></definition>
+  <definition><![CDATA[add "No Advice" to decision ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

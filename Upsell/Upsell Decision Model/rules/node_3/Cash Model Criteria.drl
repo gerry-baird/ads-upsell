@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Cash Model Criteria</name>
+  <uuid>727a74e7-cbd6-4888-abed-2684c3a5b020</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if all of the following conditions are true : 
+	- the age of customer is between 19 and 75 
+	- the employment status of customer is one of { "Employed", "Selfemployed", "Retired" } 
+    - the income of customer is at least 55000 
+then 
+   set decision to the cash model computed from
+      customer being customer ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

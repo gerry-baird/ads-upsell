@@ -8,8 +8,8 @@
     <entries xsi:type="ilog.rules.studio.model.xom:LibraryXOMPathEntry" name="org.eclipse.jdt.launching.JRE_CONTAINER" url="file:org.eclipse.jdt.launching.JRE_CONTAINER" kind="LIBRARY"/>
   </paths>
   <paths xsi:type="ilog.rules.studio.model.bom:BOMPath" pathID="BOM">
-    <entries xsi:type="ilog.rules.studio.model.bom:BOMEntry" name="model" url="platform:/Retirement/bom/model.bom"/>
     <entries xsi:type="ilog.rules.studio.model.bom:DecisionLibraryBOMEntry" name="decisions.susan.simple_test:ACMEDataModel#LATEST-SNAPSHOT" packageId="decisions.susan.simple_test:ACMEDataModel" version="LATEST-SNAPSHOT"/>
+    <entries xsi:type="ilog.rules.studio.model.bom:BOMEntry" name="model" url="platform:/Retirement/bom/model.bom"/>
   </paths>
   <modelFolders xsi:type="ilog.rules.studio.model.base:SourceFolder">
     <name>rules</name>

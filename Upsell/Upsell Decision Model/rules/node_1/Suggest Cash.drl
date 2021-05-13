@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
-  <name>output-default-setting</name>
-  <uuid>daf97228-a936-4c77-89f3-2c71443b6301</uuid>
+  <name>Suggest Cash</name>
+  <uuid>92ce6786-4277-4a87-9b03-89b8afcdfb08</uuid>
   <locale>en_US</locale>
-  <definition><![CDATA[set decision to a new ML Predictive Result where 
-	the product is "Cash" , 
-	the prediction is 0, 
-	the probability is 0; ]]></definition>
+  <definition><![CDATA[if
+	the probability of 'cash model prediction' is at least 0.6 
+then
+	add "Cash" to decision ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

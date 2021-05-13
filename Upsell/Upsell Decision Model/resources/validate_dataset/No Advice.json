@@ -1,0 +1,19 @@
+{
+  "customer": {
+    "age": 28,
+    "income": 50000,
+    "family size": 1,
+    "name": "Greg",
+    "tenure in months": 12,
+    "internet banking flag": true,
+    "number of accounts": 3,
+    "number of dependant children": 1,
+    "total amount of deposits": 1500,
+    "employment status": "Employed",
+    "education level": "Phd",
+    "gender": "Male",
+    "marital status": "Single",
+    "market group": "Starting",
+    "uban code": "City"
+  }
+}
