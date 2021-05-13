@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Cash Model">
+  <name>cashModel</name>
+  <uuid>9d24be9f-d31c-4d1a-b7b9-4c5bbbd4412a</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#2d212d08-5cb8-49d4-bbca-208452ad94fc"/>
+  <targetRuleProject href="../../Cash%20Model#92944f8a-eebf-4809-9da8-32a89696c446"/>
+  <tags key="ProviderType">
+    <value><![CDATA[OPS]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

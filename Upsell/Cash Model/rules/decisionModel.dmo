@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>dougML</name>
+  <uuid>2d212d08-5cb8-49d4-bbca-208452ad94fc</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="Decisions" name="dougML" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="input" name="customer">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="Customer" collection="false" name="customer"/>
+            </initialization>
+        </extensionElements>
+        <variable id="input_ii" name="customer" typeRef="Customer"/>
+    </inputData>
+    <decision id="input-mapping" name="Input mapping">
+        <description>ML model input</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="Customer" collection="false" name="customer"/>
+                <output bomType="decisions.susan.upsell.cashModel.Input" collection="false" name="Input mapping"/>
+                <rule defaultRule="false" href="input-mapping/Default%20Values.drl" kind="BusinessRule" name="Default Values"/>
+                <rule defaultRule="false" href="input-mapping/Main%20Features.drl" kind="BusinessRule" name="Main Features"/>
+                <rule defaultRule="false" href="input-mapping/Age%2023%20-%2030.drl" kind="BusinessRule" name="Age 23 - 30"/>
+                <rule defaultRule="false" href="input-mapping/Age%2031%20to%2040.drl" kind="BusinessRule" name="Age 31 to 40"/>
+                <rule defaultRule="false" href="input-mapping/Age%2041%20to%2055.drl" kind="BusinessRule" name="Age 41 to 55"/>
+                <rule defaultRule="false" href="input-mapping/Age%2056%20to%2065.drl" kind="BusinessRule" name="Age 56 to 65"/>
+                <rule defaultRule="false" href="input-mapping/Age%2065%20and%20Over.drl" kind="BusinessRule" name="Age 65 and Over"/>
+                <rule defaultRule="false" href="input-mapping/Internet%20Banking.drl" kind="BusinessRule" name="Internet Banking"/>
+                <rule defaultRule="false" href="input-mapping/Employment%20-%20Employed.drl" kind="BusinessRule" name="Employment - Employed"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="input_mapping_ii" name="Input mapping" typeRef="decisions.susan.upsell.cashModel.Input"/>
+        <informationRequirement>
+            <requiredInput href="#input"/>
+        </informationRequirement>
+    </decision>
+    <decision id="output" name="ML model invocation">
+        <description>ML model output</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="decisions.susan.upsell.cashModel.Input" collection="false" name="Input mapping"/>
+                <output bomType="decisions.susan.upsell.cashModel.Output" collection="false" name="ML model invocation"/>
+                <rule defaultRule="false" href="decisionModel.drl" kind="BusinessRule" name="Prediction"/>
+            </ruleset>
+            <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <property name="ads.designer.predictionInvocation"><![CDATA[true]]></property>
+            </properties>
+        </extensionElements>
+        <variable id="output_ii" name="ML model invocation" typeRef="decisions.susan.upsell.cashModel.Output"/>
+        <informationRequirement>
+            <requiredInput href="#input-mapping"/>
+        </informationRequirement>
+    </decision>
+    <decision id="output-mapping" name="Output mapping">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="decisions.susan.upsell.cashModel.Output" collection="false" name="ML model invocation"/>
+                <output bomType="java.lang.Long" collection="false" name="Output mapping"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="output_mapping_ii" name="Output mapping" typeRef="java.lang.Long"/>
+        <informationRequirement>
+            <requiredInput href="#output"/>
+        </informationRequirement>
+    </decision>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

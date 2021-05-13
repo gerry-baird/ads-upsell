@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Main Features</name>
+  <uuid>89255f4e-9a8d-4dc2-bfac-fbc58b4d8e27</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set the customer annual income of decision to the income of customer ; 
+set the customer tenure in months of decision to the tenure in months of customer ;
+set the customer family size of decision to the family size of customer ;
+set the customer number of dependent children of decision to the number of dependant children of customer ; 
+set the customer summary number of accounts of decision to the number of accounts of customer ; 
+set the customer summary total amount of deposits of decision to the total amount of deposits of customer ; ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

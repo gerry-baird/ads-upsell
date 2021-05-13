@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Default Values</name>
+  <uuid>1a8d6ae9-c4a9-4fb4-97f7-99a7dbb60955</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set decision to a new ML model input where
+		the customer age range23 to30 is 0, 
+		the customer age range30 to40 is 0, 
+		the customer age range40 to55 is 0, 
+		the customer age range55 to65 is 0, 
+		the customer age range65 and over is 0, 
+		the customer annual income is 0, 
+		the customer education level college is 0, 
+		the customer education level high school is 0, 
+		the customer education level phd is 0, 
+		the customer education level professional is 0, 
+		the customer education level university is 0, 
+		the customer employment status employed is 0, 
+		the customer employment status homemaker is 0, 
+		the customer employment status retired is 0, 
+		the customer employment status selfemployed is 0, 
+		the customer employment status unemployed is 0, 
+		the customer family size is 0, 
+		the customer gender female is 0, 
+		the customer gender male is 0, 
+		the customer internet banking indicator is 0, 
+		the customer marital status divorced is 0, 
+		the customer marital status married is 0, 
+		the customer marital status single is 0, 
+		the customer market group accumulating is 0, 
+		the customer market group gifting is 0, 
+		the customer market group spending is 0, 
+		the customer market group starting is 0, 
+		the customer number of dependent children is 0, 
+		the customer summary number of accounts is 0, 
+		the customer summary total amount of deposits is 0, 
+		the customer tenure in months is 0, 
+		the customer urban code city is 0, 
+		the customer urban code rural is 0, 
+		the customer urban code urban is 0 ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

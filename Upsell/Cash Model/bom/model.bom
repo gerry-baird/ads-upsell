@@ -1,0 +1,231 @@
+
+package decisions.susan.upsell.cashModel;
+
+
+public class Error
+        property "ads.typeId" "2"
+        property "de.generated" "true"
+{
+    public string code
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "code";
+    public string message
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "message";
+    public Error(string code, string message)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Error()
+                property "dataio.default" "true";
+}
+
+public class Input
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonPropertyOrder" "{CUSTOMER_FAMILY_SIZE,CUSTOMER_SUMMARY_NUMBER_OF_ACCOUNTS,CUSTOMER_INTERNET_BANKING_INDICATOR,CUSTOMER_NUMBER_OF_DEPENDENT_CHILDREN,CUSTOMER_ANNUAL_INCOME,CUSTOMER_SUMMARY_TOTAL_AMOUNT_OF_DEPOSITS,CUSTOMER_TENURE_IN_MONTHS,CUSTOMER_EMPLOYMENT_STATUS_Employed,CUSTOMER_EMPLOYMENT_STATUS_Homemaker,CUSTOMER_EMPLOYMENT_STATUS_Retired,CUSTOMER_EMPLOYMENT_STATUS_Selfemployed,CUSTOMER_EMPLOYMENT_STATUS_Unemployed,CUSTOMER_EDUCATION_LEVEL_College,CUSTOMER_EDUCATION_LEVEL_High School,CUSTOMER_EDUCATION_LEVEL_PhD,CUSTOMER_EDUCATION_LEVEL_Professional,CUSTOMER_EDUCATION_LEVEL_University,CUSTOMER_MARKET_GROUP_Accumulating,CUSTOMER_MARKET_GROUP_Gifting,CUSTOMER_MARKET_GROUP_Spending,CUSTOMER_MARKET_GROUP_Starting,CUSTOMER_URBAN_CODE_City,CUSTOMER_URBAN_CODE_Rural,CUSTOMER_URBAN_CODE_Urban,CUSTOMER_MARITAL_STATUS_Divorced,CUSTOMER_MARITAL_STATUS_Married,CUSTOMER_MARITAL_STATUS_Single,CUSTOMER_GENDER_Female,CUSTOMER_GENDER_Male,CUSTOMER_AGE_RANGE_23 to 30,CUSTOMER_AGE_RANGE_30 to 40,CUSTOMER_AGE_RANGE_40 to 55,CUSTOMER_AGE_RANGE_55 to 65,CUSTOMER_AGE_RANGE_65 and over}"
+        property "de.generated" "true"
+{
+    public java.lang.Long customerAgeRange23To30
+                property "ads.attributeId" "30"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_AGE_RANGE_23 to 30";
+    public java.lang.Long customerAgeRange30To40
+                property "ads.attributeId" "31"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_AGE_RANGE_30 to 40";
+    public java.lang.Long customerAgeRange40To55
+                property "ads.attributeId" "32"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_AGE_RANGE_40 to 55";
+    public java.lang.Long customerAgeRange55To65
+                property "ads.attributeId" "33"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_AGE_RANGE_55 to 65";
+    public java.lang.Long customerAgeRange65AndOver
+                property "ads.attributeId" "34"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_AGE_RANGE_65 and over";
+    public java.lang.Long customerAnnualIncome
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_ANNUAL_INCOME";
+    public java.lang.Long customerEducationLevelCollege
+                property "ads.attributeId" "13"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_EDUCATION_LEVEL_College";
+    public java.lang.Long customerEducationLevelHighSchool
+                property "ads.attributeId" "14"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_EDUCATION_LEVEL_High School";
+    public java.lang.Long customerEducationLevelPhd
+                property "ads.attributeId" "15"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_EDUCATION_LEVEL_PhD";
+    public java.lang.Long customerEducationLevelProfessional
+                property "ads.attributeId" "16"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_EDUCATION_LEVEL_Professional";
+    public java.lang.Long customerEducationLevelUniversity
+                property "ads.attributeId" "17"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_EDUCATION_LEVEL_University";
+    public java.lang.Long customerEmploymentStatusEmployed
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_EMPLOYMENT_STATUS_Employed";
+    public java.lang.Long customerEmploymentStatusHomemaker
+                property "ads.attributeId" "9"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_EMPLOYMENT_STATUS_Homemaker";
+    public java.lang.Long customerEmploymentStatusRetired
+                property "ads.attributeId" "10"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_EMPLOYMENT_STATUS_Retired";
+    public java.lang.Long customerEmploymentStatusSelfemployed
+                property "ads.attributeId" "11"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_EMPLOYMENT_STATUS_Selfemployed";
+    public java.lang.Long customerEmploymentStatusUnemployed
+                property "ads.attributeId" "12"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_EMPLOYMENT_STATUS_Unemployed";
+    public java.lang.Long customerFamilySize
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_FAMILY_SIZE";
+    public java.lang.Long customerGenderFemale
+                property "ads.attributeId" "28"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_GENDER_Female";
+    public java.lang.Long customerGenderMale
+                property "ads.attributeId" "29"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_GENDER_Male";
+    public java.lang.Long customerInternetBankingIndicator
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_INTERNET_BANKING_INDICATOR";
+    public java.lang.Long customerMaritalStatusDivorced
+                property "ads.attributeId" "25"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_MARITAL_STATUS_Divorced";
+    public java.lang.Long customerMaritalStatusMarried
+                property "ads.attributeId" "26"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_MARITAL_STATUS_Married";
+    public java.lang.Long customerMaritalStatusSingle
+                property "ads.attributeId" "27"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_MARITAL_STATUS_Single";
+    public java.lang.Long customerMarketGroupAccumulating
+                property "ads.attributeId" "18"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_MARKET_GROUP_Accumulating";
+    public java.lang.Long customerMarketGroupGifting
+                property "ads.attributeId" "19"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_MARKET_GROUP_Gifting";
+    public java.lang.Long customerMarketGroupSpending
+                property "ads.attributeId" "20"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_MARKET_GROUP_Spending";
+    public java.lang.Long customerMarketGroupStarting
+                property "ads.attributeId" "21"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_MARKET_GROUP_Starting";
+    public java.lang.Long customerNumberOfDependentChildren
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_NUMBER_OF_DEPENDENT_CHILDREN";
+    public java.lang.Long customerSummaryNumberOfAccounts
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_SUMMARY_NUMBER_OF_ACCOUNTS";
+    public java.lang.Double customerSummaryTotalAmountOfDeposits
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_SUMMARY_TOTAL_AMOUNT_OF_DEPOSITS";
+    public java.lang.Long customerTenureInMonths
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_TENURE_IN_MONTHS";
+    public java.lang.Long customerUrbanCodeCity
+                property "ads.attributeId" "22"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_URBAN_CODE_City";
+    public java.lang.Long customerUrbanCodeRural
+                property "ads.attributeId" "23"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_URBAN_CODE_Rural";
+    public java.lang.Long customerUrbanCodeUrban
+                property "ads.attributeId" "24"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CUSTOMER_URBAN_CODE_Urban";
+    public Input(java.lang.Long customerAgeRange23To30, 
+        java.lang.Long customerAgeRange30To40, 
+        java.lang.Long customerAgeRange40To55, 
+        java.lang.Long customerAgeRange55To65, 
+        java.lang.Long customerAgeRange65AndOver, 
+        java.lang.Long customerAnnualIncome, 
+        java.lang.Long customerEducationLevelCollege, 
+        java.lang.Long customerEducationLevelHighSchool, 
+        java.lang.Long customerEducationLevelPhd, 
+        java.lang.Long customerEducationLevelProfessional, 
+        java.lang.Long customerEducationLevelUniversity, 
+        java.lang.Long customerEmploymentStatusEmployed, 
+        java.lang.Long customerEmploymentStatusHomemaker, 
+        java.lang.Long customerEmploymentStatusRetired, 
+        java.lang.Long customerEmploymentStatusSelfemployed, 
+        java.lang.Long customerEmploymentStatusUnemployed, 
+        java.lang.Long customerFamilySize, 
+        java.lang.Long customerGenderFemale, 
+        java.lang.Long customerGenderMale, 
+        java.lang.Long customerInternetBankingIndicator, 
+        java.lang.Long customerMaritalStatusDivorced, 
+        java.lang.Long customerMaritalStatusMarried, 
+        java.lang.Long customerMaritalStatusSingle, 
+        java.lang.Long customerMarketGroupAccumulating, 
+        java.lang.Long customerMarketGroupGifting, 
+        java.lang.Long customerMarketGroupSpending, 
+        java.lang.Long customerMarketGroupStarting, 
+        java.lang.Long customerNumberOfDependentChildren, 
+        java.lang.Long customerSummaryNumberOfAccounts, 
+        java.lang.Double customerSummaryTotalAmountOfDeposits, 
+        java.lang.Long customerTenureInMonths, 
+        java.lang.Long customerUrbanCodeCity, 
+        java.lang.Long customerUrbanCodeRural, 
+        java.lang.Long customerUrbanCodeUrban)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Input()
+                property "dataio.default" "true";
+}
+
+public class Output
+        property "ads.typeId" "3"
+        property "com.fasterxml.jackson.annotation.JsonIgnoreProperties" {
+            ignoreUnknown "true"
+        }
+        property "de.generated" "true"
+{
+    public decisions.susan.upsell.cashModel.Error error
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "error";
+    public java.lang.Long prediction
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "prediction";
+    public java.util.List probability domain 0,* class java.lang.Double
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "probability";
+    public Output(java.lang.Long prediction, 
+        java.util.List probability domain 0,* class java.lang.Double)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Output()
+                property "dataio.default" "true";
+    public void addTo_probability(java.lang.Double probability)
+                property collectionAttribute "probability"
+                property update "true";
+    public void clear_probability()
+                property collectionAttribute "probability"
+                property update "true";
+    public boolean inError()
+                property "de.generated" {
+                    $gen "com.ibm.decision.ml.integration.xom.InErrorTestGenerator",
+                    $target "BOM"
+                };
+    public void removeFrom_probability(java.lang.Double probability)
+                property collectionAttribute "probability"
+                property update "true";
+    public static Output run(decisions.susan.upsell.cashModel.Input input)
+                property "de.generated" {
+                    $gen "com.ibm.decision.ml.integration.client.wml.xom.PredictionCallGenerator",
+                    $target "BOM",
+                    deploymentId "35f5f334-ca59-4b76-97e7-346d6749cc23",
+                    providerName "decisions/Susan/Doug ML1620827565306"
+                }
+                property pureFunction "true";
+    public static Output run(com.ibm.decision.run.RunContext runContext, decisions.susan.upsell.cashModel.Input input)
+                property "de.generated" {
+                    $gen "com.ibm.decision.ml.integration.client.wml.xom.PredictionRunGenerator",
+                    $target "BOM",
+                    deploymentId "35f5f334-ca59-4b76-97e7-346d6749cc23",
+                    providerName "decisions/Susan/Doug ML1620827565306"
+                }
+                property pureFunction "true";
+    public void set_probability(java.util.Collection probability domain 0,* class java.lang.Double)
+                property collectionAttribute "probability"
+                property update "true";
+}
+

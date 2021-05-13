@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>dougML</name>
+  <uuid>32060a43-982c-4b85-a281-90289ba765e0</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set decision to predict( 'Input mapping' ) ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

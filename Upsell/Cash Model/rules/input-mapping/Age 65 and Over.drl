@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Age 65 and Over</name>
+  <uuid>70959a88-e508-4607-b5f0-5ddadb4f45cf</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if  the age of customer is more than 65 
+then set the customer age range65 and over of decision to 1 ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>
