@@ -1,0 +1,90 @@
+
+
+public class Customer
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Customer"
+        property "de.generated" "true"
+{
+    public java.lang.Long age
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "age"
+                property update "true";
+    public string educationLevel
+                property "ads.attributeId" "11"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "education level"
+                property update "true";
+    public string employmentStatus
+                property "ads.attributeId" "10"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "employment status"
+                property update "true";
+    public java.lang.Long familySize
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "family size"
+                property update "true";
+    public string gender
+                property "ads.attributeId" "15"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "gender"
+                property update "true";
+    public double income
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "income"
+                property update "true";
+    public boolean internetBankingFlag
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "internet banking flag"
+                property update "true";
+    public string maritalStatus
+                property "ads.attributeId" "14"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "marital status"
+                property update "true";
+    public string marketGroup
+                property "ads.attributeId" "12"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "market group"
+                property update "true";
+    public string name
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "name"
+                property update "true";
+    public java.lang.Long numberOfAccounts
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "number of accounts"
+                property update "true";
+    public java.lang.Long numberOfDependantChildren
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "number of dependant children"
+                property update "true";
+    public java.lang.Long tenureInMonths
+                property "ads.attributeId" "9"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "tenure in months"
+                property update "true";
+    public double totalAmountOfDeposits
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "total amount of deposits"
+                property update "true";
+    public string ubanCode
+                property "ads.attributeId" "13"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "uban code"
+                property update "true";
+    public Customer(java.lang.Long age, 
+        string educationLevel, 
+        string employmentStatus, 
+        java.lang.Long familySize, 
+        string gender, 
+        double income, 
+        boolean internetBankingFlag, 
+        string maritalStatus, 
+        string marketGroup, 
+        string name, 
+        java.lang.Long numberOfAccounts, 
+        java.lang.Long numberOfDependantChildren, 
+        java.lang.Long tenureInMonths, 
+        double totalAmountOfDeposits, 
+        string ubanCode)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Customer()
+                property "dataio.default" "true";
+}
+

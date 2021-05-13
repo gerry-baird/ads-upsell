@@ -1,0 +1,18 @@
+{
+  "metadata" : {
+    "id" : "396a2763-d321-4723-87ef-88a2d3d678d3",
+    "name" : "offer_affinity_CASH_model",
+    "modified_at" : "2021-05-10T12:31:46.204Z",
+    "created_at" : "2021-05-10T12:31:43.038Z",
+    "owner" : "IBMid-27000440YA",
+    "space_id" : "8223243c-e793-498f-a8de-d3f6e037205d"
+  },
+  "entity" : {
+    "label_column" : "Target",
+    "type" : "scikit-learn_0.23"
+  },
+  "id" : "396a2763-d321-4723-87ef-88a2d3d678d3",
+  "name" : "offer_affinity_CASH_model",
+  "trainedAt" : "2021-05-10T12:31:43.038Z",
+  "modifiedAt" : "2021-05-10T12:31:46.204Z"
+}
