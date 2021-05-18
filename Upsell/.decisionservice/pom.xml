@@ -23,7 +23,12 @@
         </dependency>
         <dependency>
             <groupId>decisions.susan.upsell</groupId>
-            <artifactId>modelCatalogue</artifactId>
+            <artifactId>flyawayRuleModel</artifactId>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>decisions.susan.upsell</groupId>
+            <artifactId>modelCatalogueResponse</artifactId>
             <version>LATEST-SNAPSHOT</version>
         </dependency>
         <dependency>
@@ -83,7 +88,16 @@
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>decisions.susan.upsell</groupId>
-                                    <artifactId>modelCatalogue</artifactId>
+                                    <artifactId>flyawayRuleModel</artifactId>
+                                    <version>LATEST-SNAPSHOT</version>
+                                    <type>jar</type>
+                                    <overWrite>false</overWrite>
+                                    <includes>**/*.class</includes>
+                                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>decisions.susan.upsell</groupId>
+                                    <artifactId>modelCatalogueResponse</artifactId>
                                     <version>LATEST-SNAPSHOT</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>

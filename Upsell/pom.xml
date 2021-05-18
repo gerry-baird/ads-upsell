@@ -17,7 +17,8 @@
     <modules>
         <module>ACME Data Model</module>
         <module>Cash Model</module>
-        <module>Model Catalogue</module>
+        <module>Flyaway Rule Model</module>
+        <module>Model Catalogue Response</module>
         <module>Retirement</module>
         <module>Upsell Decision Model</module>
         <module>.decisionservice</module>
