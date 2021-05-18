@@ -55,6 +55,7 @@
                 </Condition>
                 <Condition>
                     <Expression>
+                        <Text><![CDATA[<a number> is at least <min> and less than <max>]]></Text>
                         <Param><![CDATA[20000]]></Param>
                         <Param><![CDATA[25000]]></Param>
                     </Expression>
