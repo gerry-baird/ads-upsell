@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Pediction Threshold</name>
+  <uuid>12184e39-735b-45d1-830c-b506caed9cfd</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if the probability of decision is at least 0.55 
+then set the prediction of decision to 1;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

@@ -4,7 +4,7 @@
   <uuid>83193444-54fb-4668-940f-37e89001428c</uuid>
   <locale>en_US</locale>
   <definition><![CDATA[definitions 
-	set 'overall score' to 80 + 30 ;
+	set 'overall score' to 'income score' + 'age score' ;
     set 'average score' to 'overall score' / 2; 
 
 then set the probability of decision to 'average score' / 100 ;]]></definition>

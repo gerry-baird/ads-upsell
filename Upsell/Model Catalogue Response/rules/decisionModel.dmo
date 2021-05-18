@@ -23,6 +23,7 @@
                 <output bomType="MLPredictiveResult" collection="false" name="Model Results"/>
                 <rule defaultRule="false" href="node_1/Cash.drl" kind="BusinessRule" name="Cash"/>
                 <rule defaultRule="false" href="node_1/Retirement.drl" kind="BusinessRule" name="Retirement"/>
+                <rule defaultRule="false" href="node_1/Flyaway%20Mortgage.drl" kind="BusinessRule" name="Flyaway Mortgage"/>
             </ruleset>
         </extensionElements>
         <variable id="node_1_ii" name="Model Results" typeRef="MLPredictiveResult"/>
@@ -37,6 +38,9 @@
         </knowledgeRequirement>
         <knowledgeRequirement>
             <requiredKnowledge href="#node_3"/>
+        </knowledgeRequirement>
+        <knowledgeRequirement>
+            <requiredKnowledge href="#node_5"/>
         </knowledgeRequirement>
     </decision>
     <inputData id="node_4" name="Model">
@@ -86,6 +90,31 @@
                     <variable name="class"/>
                     <literalExpression>
                         <text>"decisions.susan.upsell.retirement.Retirement"</text>
+                    </literalExpression>
+                </contextEntry>
+                <contextEntry>
+                    <variable name="method signature"/>
+                    <literalExpression>
+                        <text>"run(Customer)"</text>
+                    </literalExpression>
+                </contextEntry>
+            </context>
+        </encapsulatedLogic>
+    </businessKnowledgeModel>
+    <businessKnowledgeModel id="node_5" name="Flyaway Rule Model">
+        <extensionElements>
+            <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <property name="ads.designer.bkKind"><![CDATA[decision]]></property>
+            </properties>
+        </extensionElements>
+        <variable name="Flyaway Rule Model" typeRef="MLPredictiveResult"/>
+        <encapsulatedLogic typeRef="MLPredictiveResult">
+            <formalParameter name="customer" typeRef="Customer"/>
+            <context>
+                <contextEntry>
+                    <variable name="class"/>
+                    <literalExpression>
+                        <text>"decisions.susan.upsell.flyawayrulemodel.FlyawayRuleModel"</text>
                     </literalExpression>
                 </contextEntry>
                 <contextEntry>

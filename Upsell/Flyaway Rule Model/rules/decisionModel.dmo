@@ -18,11 +18,12 @@
     <decision id="node_1" name="Decision">
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="java.lang.Long" collection="false" name="income score"/>
-                <input bomType="java.lang.Long" collection="false" name="age score"/>
+                <input bomType="java.lang.Double" collection="false" name="income score"/>
+                <input bomType="java.lang.Double" collection="false" name="age score"/>
                 <output bomType="MLPredictiveResult" collection="false" name="Decision"/>
                 <rule defaultRule="false" href="node_1/Defaults.drl" kind="BusinessRule" name="Defaults"/>
                 <rule defaultRule="false" href="node_1/Probability.drl" kind="BusinessRule" name="Probability"/>
+                <rule defaultRule="false" href="node_1/Pediction%20Threshold.drl" kind="BusinessRule" name="Pediction Threshold"/>
             </ruleset>
         </extensionElements>
         <variable id="node_1_ii" name="Decision" typeRef="MLPredictiveResult"/>
@@ -37,11 +38,11 @@
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="Customer" collection="false" name="customer"/>
-                <output bomType="java.lang.Long" collection="false" name="income score"/>
-                <rule defaultRule="false" href="node_2/Age%20Score.dmt" kind="DecisionTable" name="Age Score"/>
+                <output bomType="java.lang.Double" collection="false" name="income score"/>
+                <rule defaultRule="false" href="node_2/Income%20Score.dmt" kind="DecisionTable" name="Income Score"/>
             </ruleset>
         </extensionElements>
-        <variable id="node_2_ii" name="Income Scoring" typeRef="java.lang.Long"/>
+        <variable id="node_2_ii" name="Income Scoring" typeRef="java.lang.Double"/>
         <informationRequirement>
             <requiredInput href="#node_0"/>
         </informationRequirement>
@@ -50,11 +51,11 @@
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="Customer" collection="false" name="customer"/>
-                <output bomType="java.lang.Long" collection="false" name="age score"/>
+                <output bomType="java.lang.Double" collection="false" name="age score"/>
                 <rule defaultRule="false" href="node_3/Default.drl" kind="BusinessRule" name="Default"/>
             </ruleset>
         </extensionElements>
-        <variable id="node_3_ii" name="Age Scoring" typeRef="java.lang.Long"/>
+        <variable id="node_3_ii" name="Age Scoring" typeRef="java.lang.Double"/>
         <informationRequirement>
             <requiredInput href="#node_0"/>
         </informationRequirement>
