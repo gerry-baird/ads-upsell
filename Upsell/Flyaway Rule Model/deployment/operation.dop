@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Flyaway Rule Model">
+  <name>flyawayRuleModel</name>
+  <uuid>b06f7dcd-ef18-4657-a874-cc23cf8a41a5</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#a533e885-7f85-4cfd-b01f-7e879961fd46"/>
+  <targetRuleProject href="../../Flyaway%20Rule%20Model#6296d1c2-d096-4931-94e4-e5b502ba64ed"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>
