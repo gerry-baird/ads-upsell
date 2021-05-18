@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>c1c5b3b2-442e-438d-b391-d50bdd002d9d</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_0" name="Customer">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="Customer" collection="false" name="customer"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="Customer" typeRef="Customer"/>
+    </inputData>
+    <decision id="node_1" name="Model Results">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="Customer" collection="false" name="customer"/>
+                <input bomType="java.lang.String" collection="false" name="Model"/>
+                <output bomType="MLPredictiveResult" collection="false" name="Model Results"/>
+                <rule defaultRule="false" href="node_1/Cash.drl" kind="BusinessRule" name="Cash"/>
+                <rule defaultRule="false" href="node_1/Retirement.drl" kind="BusinessRule" name="Retirement"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="Model Results" typeRef="MLPredictiveResult"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_4"/>
+        </informationRequirement>
+        <knowledgeRequirement>
+            <requiredKnowledge href="#node_2"/>
+        </knowledgeRequirement>
+        <knowledgeRequirement>
+            <requiredKnowledge href="#node_3"/>
+        </knowledgeRequirement>
+    </decision>
+    <inputData id="node_4" name="Model">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.String" collection="false" name="Model"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_4_ii" name="Model" typeRef="java.lang.String"/>
+    </inputData>
+    <businessKnowledgeModel id="node_2" name="Cash Model">
+        <extensionElements>
+            <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <property name="ads.designer.bkKind"><![CDATA[prediction]]></property>
+            </properties>
+        </extensionElements>
+        <variable name="Cash Model" typeRef="MLPredictiveResult"/>
+        <encapsulatedLogic typeRef="MLPredictiveResult">
+            <formalParameter name="customer" typeRef="Customer"/>
+            <context>
+                <contextEntry>
+                    <variable name="class"/>
+                    <literalExpression>
+                        <text>"decisions.susan.simple_test.dougML.CashModel"</text>
+                    </literalExpression>
+                </contextEntry>
+                <contextEntry>
+                    <variable name="method signature"/>
+                    <literalExpression>
+                        <text>"run(Customer)"</text>
+                    </literalExpression>
+                </contextEntry>
+            </context>
+        </encapsulatedLogic>
+    </businessKnowledgeModel>
+    <businessKnowledgeModel id="node_3" name="Retirement">
+        <extensionElements>
+            <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <property name="ads.designer.bkKind"><![CDATA[prediction]]></property>
+            </properties>
+        </extensionElements>
+        <variable name="Retirement" typeRef="MLPredictiveResult"/>
+        <encapsulatedLogic typeRef="MLPredictiveResult">
+            <formalParameter name="customer" typeRef="Customer"/>
+            <context>
+                <contextEntry>
+                    <variable name="class"/>
+                    <literalExpression>
+                        <text>"decisions.susan.upsell.retirement.Retirement"</text>
+                    </literalExpression>
+                </contextEntry>
+                <contextEntry>
+                    <variable name="method signature"/>
+                    <literalExpression>
+                        <text>"run(Customer)"</text>
+                    </literalExpression>
+                </contextEntry>
+            </context>
+        </encapsulatedLogic>
+    </businessKnowledgeModel>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

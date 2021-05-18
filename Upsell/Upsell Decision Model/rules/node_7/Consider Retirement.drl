@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Consider Retirement</name>
+  <uuid>92a921a4-7f42-4e3d-8c3a-3f64fb6c14a7</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if all of the following conditions are true : 
+	- the age of customer is between 25 and 50 
+	- the employment status of customer is one of { "Employed", "Selfemployed"} 
+    - the income of customer is at least 25000 
+then 
+	add "Retirement" to decision ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

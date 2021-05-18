@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Retirement</name>
+  <uuid>4f6ffa64-2513-415b-9db7-98beb63a1fa0</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if 
+	Model is "Retirement" then
+set decision to the retirement computed from
+      customer being customer ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

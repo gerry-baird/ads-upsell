@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>output-default-setting</name>
+  <uuid>5aca9d76-8088-4090-9702-3279e6b263c5</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[add a new ML Predictive Result where
+		the product is "No Advice" , 
+		the prediction is 1, 
+		the probability is 1 to decision ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

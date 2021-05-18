@@ -8,7 +8,7 @@
     </parent>
 
     <groupId>decisions.susan.upsell</groupId>
-    <artifactId>upsellDecisionModel</artifactId>
+    <artifactId>modelCatalogue</artifactId>
     <version>LATEST-SNAPSHOT</version>
     <packaging>decision-library</packaging>
 
@@ -20,10 +20,10 @@
                 <configuration>
                     <deployments>
                         <deployment>
-                            <name>upsellDecisionModel</name>
+                            <name>modelCatalogue</name>
                         </deployment>
                     </deployments>
-                <packageName>decisions.susan.upsell.upselldecisionmodel</packageName>
+                <packageName>decisions.susan.upsell.modelexecution</packageName>
                 </configuration>
             </plugin>
         </plugins>
@@ -37,8 +37,14 @@
             <version>LATEST-SNAPSHOT</version>
         </dependency>
         <dependency>
+            <groupId>decisions.susan.simple_test</groupId>
+            <artifactId>cashModel</artifactId>
+            <type>decision-library</type>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>decisions.susan.upsell</groupId>
-            <artifactId>modelCatalogue</artifactId>
+            <artifactId>retirement</artifactId>
             <type>decision-library</type>
             <version>LATEST-SNAPSHOT</version>
         </dependency>

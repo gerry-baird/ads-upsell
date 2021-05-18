@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Execute</name>
+  <uuid>f1430bdd-5fa6-4466-9731-25643df10ea4</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions 
+	set 'this model' to a string in models ; 
+then
+  add the model catalogue computed from 
+	customer being customer , 
+	Model being 'this model' to decision;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

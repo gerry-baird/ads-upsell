@@ -15,109 +15,62 @@
         </extensionElements>
         <variable id="node_0_ii" name="customer" typeRef="Customer"/>
     </inputData>
-    <decision id="node_1" name="Recommended Promotions">
+    <decision id="node_7" name="Model Selection">
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="Customer" collection="false" name="customer"/>
-                <input bomType="MLPredictiveResult" collection="false" name="cash model prediction"/>
-                <input bomType="MLPredictiveResult" collection="false" name="retirement model prediction"/>
-                <output bomType="java.lang.String" collection="true" name="Recommended Promotions"/>
-                <rule defaultRule="false" href="node_1/Suggest%20Cash.drl" kind="BusinessRule" name="Suggest Cash"/>
-                <rule defaultRule="true" href="node_1/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
-                <rule defaultRule="false" href="node_1/Suggest%20Retirement.drl" kind="BusinessRule" name="Suggest Retirement"/>
+                <output bomType="java.lang.String" collection="true" name="models"/>
+                <rule defaultRule="false" href="node_7/Consider%20Cash.drl" kind="BusinessRule" name="Consider Cash"/>
+                <rule defaultRule="false" href="node_7/Consider%20Retirement.drl" kind="BusinessRule" name="Consider Retirement"/>
             </ruleset>
         </extensionElements>
-        <variable id="node_1_ii" name="Recommended Promotions" typeRef="java.lang.String[]"/>
+        <variable id="node_7_ii" name="Model Selection" typeRef="java.lang.String[]"/>
         <informationRequirement>
             <requiredInput href="#node_0"/>
-        </informationRequirement>
-        <informationRequirement>
-            <requiredInput href="#node_3"/>
-        </informationRequirement>
-        <informationRequirement>
-            <requiredInput href="#node_6"/>
         </informationRequirement>
     </decision>
-    <decision id="node_3" name="Cash Model Selection">
-        <description>Use rules to decide if cash model should be used.</description>
+    <decision id="node_8" name="Execute Models">
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="Customer" collection="false" name="customer"/>
-                <output bomType="MLPredictiveResult" collection="false" name="cash model prediction"/>
-                <rule defaultRule="false" href="node_3/Cash%20Model%20Criteria.drl" kind="BusinessRule" name="Cash Model Criteria"/>
-                <rule defaultRule="true" href="node_3/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+                <input bomType="java.lang.String" collection="true" name="models"/>
+                <output bomType="MLPredictiveResult" collection="true" name="Execute Models"/>
+                <rule defaultRule="false" href="node_8/Execute.drl" kind="BusinessRule" name="Execute"/>
+                <rule defaultRule="true" href="node_8/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
             </ruleset>
         </extensionElements>
-        <variable id="node_3_ii" name="Cash Model Selection" typeRef="MLPredictiveResult"/>
+        <variable id="node_8_ii" name="Execute Models" typeRef="MLPredictiveResult[]"/>
         <informationRequirement>
             <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_7"/>
         </informationRequirement>
         <knowledgeRequirement>
-            <requiredKnowledge href="#node_4"/>
+            <requiredKnowledge href="#node_9"/>
         </knowledgeRequirement>
     </decision>
-    <decision id="node_6" name="Retirement Model Selection">
-        <extensionElements>
-            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="Customer" collection="false" name="customer"/>
-                <output bomType="MLPredictiveResult" collection="false" name="retirement model prediction"/>
-                <rule defaultRule="false" href="node_6/Retirement%20Model%20Criteria.drl" kind="BusinessRule" name="Retirement Model Criteria"/>
-                <rule defaultRule="true" href="node_6/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
-            </ruleset>
-        </extensionElements>
-        <variable id="node_6_ii" name="Retirement Model Selection" typeRef="MLPredictiveResult"/>
-        <informationRequirement>
-            <requiredInput href="#node_0"/>
-        </informationRequirement>
-        <knowledgeRequirement>
-            <requiredKnowledge href="#node_5"/>
-        </knowledgeRequirement>
-    </decision>
-    <businessKnowledgeModel id="node_4" name="Cash Model">
+    <businessKnowledgeModel id="node_9" name="Model Catalogue">
         <extensionElements>
             <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <property name="ads.designer.bkKind"><![CDATA[prediction]]></property>
+                <property name="ads.designer.bkKind"><![CDATA[decision]]></property>
             </properties>
         </extensionElements>
-        <variable name="Cash Model" typeRef="MLPredictiveResult"/>
+        <variable name="Model Catalogue" typeRef="MLPredictiveResult"/>
         <encapsulatedLogic typeRef="MLPredictiveResult">
             <formalParameter name="customer" typeRef="Customer"/>
+            <formalParameter name="model" typeRef="java.lang.String"/>
             <context>
                 <contextEntry>
                     <variable name="class"/>
                     <literalExpression>
-                        <text>"decisions.susan.simple_test.dougML.CashModel"</text>
+                        <text>"decisions.susan.upsell.modelexecution.ModelCatalogue"</text>
                     </literalExpression>
                 </contextEntry>
                 <contextEntry>
                     <variable name="method signature"/>
                     <literalExpression>
-                        <text>"run(Customer)"</text>
-                    </literalExpression>
-                </contextEntry>
-            </context>
-        </encapsulatedLogic>
-    </businessKnowledgeModel>
-    <businessKnowledgeModel id="node_5" name="Retirement">
-        <extensionElements>
-            <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <property name="ads.designer.bkKind"><![CDATA[prediction]]></property>
-            </properties>
-        </extensionElements>
-        <variable name="Retirement" typeRef="MLPredictiveResult"/>
-        <encapsulatedLogic typeRef="MLPredictiveResult">
-            <formalParameter name="customer" typeRef="Customer"/>
-            <context>
-                <contextEntry>
-                    <variable name="class"/>
-                    <literalExpression>
-                        <text>"decisions.susan.upsell.retirement.Retirement"</text>
-                    </literalExpression>
-                </contextEntry>
-                <contextEntry>
-                    <variable name="method signature"/>
-                    <literalExpression>
-                        <text>"run(Customer)"</text>
+                        <text>"run(Customer,java.lang.String)"</text>
                     </literalExpression>
                 </contextEntry>
             </context>
