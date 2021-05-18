@@ -38,7 +38,7 @@
         </dependency>
         <dependency>
             <groupId>decisions.susan.upsell</groupId>
-            <artifactId>modelCatalogue</artifactId>
+            <artifactId>modelCatalogueResponse</artifactId>
             <type>decision-library</type>
             <version>LATEST-SNAPSHOT</version>
         </dependency>

@@ -6,7 +6,7 @@
   <definition><![CDATA[definitions 
 	set 'this model' to a string in models ; 
 then
-  add the model catalogue computed from 
+  add the model catalogue response computed from 
 	customer being customer , 
 	Model being 'this model' to decision;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

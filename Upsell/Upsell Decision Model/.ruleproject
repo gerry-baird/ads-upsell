@@ -9,7 +9,7 @@
   </paths>
   <paths xsi:type="ilog.rules.studio.model.bom:BOMPath" pathID="BOM">
     <entries xsi:type="ilog.rules.studio.model.bom:DecisionLibraryBOMEntry" name="decisions.susan.simple_test:ACMEDataModel#LATEST-SNAPSHOT" packageId="decisions.susan.simple_test:ACMEDataModel" version="LATEST-SNAPSHOT"/>
-    <entries xsi:type="ilog.rules.studio.model.bom:DecisionLibraryBOMEntry" name="decisions.susan.upsell:modelCatalogue#LATEST-SNAPSHOT" packageId="decisions.susan.upsell:modelCatalogue" version="LATEST-SNAPSHOT"/>
+    <entries xsi:type="ilog.rules.studio.model.bom:DecisionLibraryBOMEntry" name="decisions.susan.upsell:modelCatalogueResponse#LATEST-SNAPSHOT" packageId="decisions.susan.upsell:modelCatalogueResponse" version="LATEST-SNAPSHOT"/>
   </paths>
   <modelFolders xsi:type="ilog.rules.studio.model.base:SourceFolder">
     <name>rules</name>

@@ -8,7 +8,7 @@
     </parent>
 
     <groupId>decisions.susan.upsell</groupId>
-    <artifactId>modelCatalogue</artifactId>
+    <artifactId>modelCatalogueResponse</artifactId>
     <version>LATEST-SNAPSHOT</version>
     <packaging>decision-library</packaging>
 
@@ -20,7 +20,7 @@
                 <configuration>
                     <deployments>
                         <deployment>
-                            <name>modelCatalogue</name>
+                            <name>modelCatalogueResponse</name>
                         </deployment>
                     </deployments>
                 <packageName>decisions.susan.upsell.modelexecution</packageName>
