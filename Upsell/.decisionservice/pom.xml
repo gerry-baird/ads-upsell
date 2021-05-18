@@ -23,6 +23,11 @@
         </dependency>
         <dependency>
             <groupId>decisions.susan.upsell</groupId>
+            <artifactId>modelCatalogue</artifactId>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>decisions.susan.upsell</groupId>
             <artifactId>retirement</artifactId>
             <version>LATEST-SNAPSHOT</version>
         </dependency>
@@ -70,6 +75,15 @@
                                 <artifactItem>
                                     <groupId>decisions.susan.simple_test</groupId>
                                     <artifactId>cashModel</artifactId>
+                                    <version>LATEST-SNAPSHOT</version>
+                                    <type>jar</type>
+                                    <overWrite>false</overWrite>
+                                    <includes>**/*.class</includes>
+                                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>decisions.susan.upsell</groupId>
+                                    <artifactId>modelCatalogue</artifactId>
                                     <version>LATEST-SNAPSHOT</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
