@@ -1,7 +1,7 @@
 {
   "customer": {
-    "age": 23,
-    "income": 14000,
+    "age": 25,
+    "income": 28000,
     "family size": 1,
     "name": "Greg",
     "tenure in months": 12,
@@ -9,7 +9,7 @@
     "number of accounts": 3,
     "number of dependant children": 1,
     "total amount of deposits": 1500,
-    "employment status": "Unemployed",
+    "employment status": "Employed",
     "education level": "Phd",
     "gender": "Male",
     "marital status": "Single",
