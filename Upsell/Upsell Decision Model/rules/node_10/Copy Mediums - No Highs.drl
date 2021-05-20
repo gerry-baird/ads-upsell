@@ -11,5 +11,6 @@ if the probability of 'a product recommendation' is between 0.65 and 0.8
 and there is no ML Predictive Result in 'Execute Models' 
 	where the probability of this ML Predictive Result is more than 0.899, 
 then 
-	add 'a product recommendation' to decision ; ]]></definition>
+	add 'a product recommendation' to decision ; 
+    ]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

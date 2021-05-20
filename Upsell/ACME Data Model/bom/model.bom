@@ -88,6 +88,24 @@ public class Customer
                 property "dataio.default" "true";
 }
 
+public class Event
+        property "ads.typeId" "3"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Event"
+        property "de.generated" "true"
+{
+    public string type
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "type"
+                property update "true";
+    public Event(string type)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Event()
+                property "dataio.default" "true";
+}
+
 public class MLPredictiveResult
         property "ads.typeId" "2"
         property "com.fasterxml.jackson.annotation.JsonTypeName" "ML Predictive Result"
@@ -105,7 +123,7 @@ public class MLPredictiveResult
                 property "ads.attributeId" "3"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "product"
                 property update "true";
-    public MLPredictiveResult(string product, java.lang.Long prediction, double probability)
+    public MLPredictiveResult(java.lang.Long prediction, double probability, string product)
                 property autoExpand "true"
                 property beanConstructor "true"
                 property groups "BALA"

@@ -52,9 +52,15 @@ Customer.totalAmountOfDeposits#phrase.subtraction_setter = subtract {total amoun
 Customer.ubanCode#phrase.action = set the uban code of {this} to {uban code}
 Customer.ubanCode#phrase.navigation = {uban code} of {this}
 
+# Event
+Event#concept.label = Event
+Event.Event(java.lang.String)#phrase.navigation = a new {Event} where {0, type}
+Event.type#phrase.action = set the type of {this} to {type}
+Event.type#phrase.navigation = {type} of {this}
+
 # MLPredictiveResult
 MLPredictiveResult#concept.label = ML Predictive Result
-MLPredictiveResult.MLPredictiveResult(java.lang.String,java.lang.Long,double)#phrase.navigation = a new {ML Predictive Result} where {0, product} {1, prediction} {2, probability}
+MLPredictiveResult.MLPredictiveResult(java.lang.Long,double,java.lang.String)#phrase.navigation = a new {ML Predictive Result} where {0, prediction} {1, probability} {2, product}
 MLPredictiveResult.prediction#phrase.action = set the prediction of {this} to {prediction}
 MLPredictiveResult.prediction#phrase.addition_setter = add {prediction} to the prediction of {this}
 MLPredictiveResult.prediction#phrase.navigation = {prediction} of {this}

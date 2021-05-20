@@ -2,12 +2,14 @@
 <ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
   <name>Remove Flyaway for Dependant Children</name>
   <uuid>e9491470-5f3b-4556-872b-ce6f81467fdd</uuid>
-  <documentation><![CDATA[Don't promote Flyaway mortgage to customers with dependent children. ]]></documentation>
+  <documentation><![CDATA[Don't promote low probability Flyaway mortgage offers to customers with dependent children. ]]></documentation>
   <locale>en_US</locale>
   <definition><![CDATA[definitions 
-	set 'a product recommendation' to a ML Predictive Result in 'Execute Models'; 
+	set 'the product recommendation' to a ML Predictive Result in decision ; 
     
-if the probability of 'a product recommendation' is more than 0.8 
+if the probability of 'the product recommendation' is less than 0.6
+and the product of 'the product recommendation' is "Flyaway" 
+and the number of dependant children of customer is more than 0
 then 
-	add 'a product recommendation' to decision ; ]]></definition>
+	remove 'the product recommendation' from decision ; ]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

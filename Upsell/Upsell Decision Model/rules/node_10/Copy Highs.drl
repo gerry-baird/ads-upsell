@@ -8,5 +8,6 @@
     
 if the probability of 'a product recommendation' is more than 0.8 
 then 
-	add 'a product recommendation' to decision ; ]]></definition>
+	add 'a product recommendation' to decision ; 
+    print "Adding high probability offer : " + the product of 'a product recommendation' ; ]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

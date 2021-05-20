@@ -19,6 +19,7 @@
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="Customer" collection="false" name="customer"/>
+                <input bomType="Event" collection="false" name="customer event"/>
                 <output bomType="java.lang.String" collection="true" name="models"/>
                 <rule defaultRule="false" href="node_7/Consider%20Cash.drl" kind="BusinessRule" name="Consider Cash"/>
                 <rule defaultRule="false" href="node_7/Consider%20Retirement.drl" kind="BusinessRule" name="Consider Retirement"/>
@@ -28,6 +29,9 @@
         <variable id="node_7_ii" name="Model Selection" typeRef="java.lang.String[]"/>
         <informationRequirement>
             <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_11"/>
         </informationRequirement>
     </decision>
     <decision id="node_8" name="Execute Models">
@@ -71,6 +75,14 @@
             <requiredInput href="#node_8"/>
         </informationRequirement>
     </decision>
+    <inputData id="node_11" name="customer event">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="Event" collection="false" name="customer event"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_11_ii" name="customer event" typeRef="Event"/>
+    </inputData>
     <businessKnowledgeModel id="node_9" name="Model Catalogue Response">
         <extensionElements>
             <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
