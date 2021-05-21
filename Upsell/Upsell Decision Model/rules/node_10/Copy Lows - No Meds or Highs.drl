@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Copy Lows - No Meds or Highs</name>
+  <uuid>d4ae8534-d890-4acc-bf57-e36c67db1dcf</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions 
+	set 'a product recommendation' to a ML Predictive Result in 'Execute Models'; 
+    
+if the probability of 'a product recommendation' is between 0.5 and 0.65 
+and there is no ML Predictive Result in 'Execute Models' 
+	where the probability of this ML Predictive Result is more than 0.65, 
+then 
+	add 'a product recommendation' to decision ; 
+    ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

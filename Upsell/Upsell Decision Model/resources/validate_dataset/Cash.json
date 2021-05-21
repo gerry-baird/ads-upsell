@@ -15,5 +15,8 @@
     "name": "Bill",
     "total amount of deposits": 5000,
     "uban code": "Rural"
+  },
+  "customerEvent": {
+    "type": ""
   }
 }
